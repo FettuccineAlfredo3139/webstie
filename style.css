@@ -3,10 +3,6 @@ p, .text, h1, h2, h3, h4, h5, h6, label {
 	color:var(--txt);
 }
 
-bold {
-	text-emphasis: bold;
-}
-
 body { 
 	background-color: var(--bg);
 	position: relative;
@@ -222,4 +218,10 @@ a {
     --bg: rgb(28, 28, 59);
     --hdr-ftr-bg: rgb(21, 21, 43);
     --txt: azure;
+}
+
+.cherry, :root:has(#cherry:checked) {
+	--bg: rgb(225, 228, 225);
+	--hdr-ftr-bg: rgb(248, 131, 121);
+	--txt: black;
 }
