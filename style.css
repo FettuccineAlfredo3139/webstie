@@ -221,7 +221,19 @@ a {
 }
 
 .cherry, :root:has(#cherry:checked) {
-	--bg: rgb(225, 228, 225);
+	--bg: rgb(255, 228, 225);
 	--hdr-ftr-bg: rgb(248, 131, 121);
 	--txt: black;
+}
+
+.forest, :root:has(#forest:checked) {
+	--bg: #eaf0ce;
+	--hdr-ftr-bg: #558b6e;
+	--txt: #453823;
+}
+
+.ocean, :root:has(#ocean:checked) {
+	--bg: #edf6f9;
+	--hdr-ftr-bg: #83c5be;
+	--txt: #006d77;
 }
