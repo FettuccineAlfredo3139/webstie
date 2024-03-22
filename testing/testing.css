@@ -3,10 +3,6 @@ p, .text, h1, h2, h3, h4, h5, h6, label {
 	color:var(--txt);
 }
 
-bold {
-	text-emphasis: bold;
-}
-
 body { 
 	background-color: var(--bg);
 	position: relative;
@@ -36,6 +32,14 @@ footer {
     align-items: center;
     padding: 0px 10px;
     gap: 60px;
+}
+
+#blog {
+	display: block;
+	border: 2px solid var(--txt);
+	background-color: var(--blog-bg);
+	padding: 5px 2px;
+	margin: 7px;
 }
 
 /* hamburger menu */
@@ -112,7 +116,7 @@ a {
 
 #home {
 	margin-top: 70px;
-	border: 1px solid var(--txt)
+	border: 1px solid var(--txt);
 }
 
 @media(max-width:1600px) {
@@ -214,12 +218,35 @@ a {
 
 .light, :root:has(#light:checked) {
     --bg: white;
-    --hdr-ftr-bg: #e6e6e6;
+    --hdr-ftr-bg: #dcdbdb;
     --txt: black;
+	--blog-bg: #ededed;
 }
 
 .dark, :root:has(#dark:checked) {
     --bg: rgb(28, 28, 59);
     --hdr-ftr-bg: rgb(21, 21, 43);
     --txt: azure;
+	--blog-bg: rgb(53, 53, 95); 
+}
+
+.cherry, :root:has(#cherry:checked) {
+	--bg: rgb(255, 228, 225);
+	--hdr-ftr-bg: rgb(248, 131, 121);
+	--txt: black;
+	--blog-bg: #FDBCB4;
+}
+
+.forest, :root:has(#forest:checked) {
+	--bg: #eaf0ce;
+	--hdr-ftr-bg: #558b6e;
+	--txt: #453823;
+	--blog-bg: #74C365;
+}
+
+.ocean, :root:has(#ocean:checked) {
+	--bg: #edf6f9;
+	--hdr-ftr-bg: #83c5be;
+	--txt: #006d77;
+	--blog-bg: #7FFFD4;
 }
