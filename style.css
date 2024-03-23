@@ -1,6 +1,6 @@
 /* Made myself */
 p, .text, h1, h2, h3, h4, h5, h6, label {
-	color:var(--txt);
+	color: var(--txt);
 }
 
 body { 
@@ -16,12 +16,6 @@ body {
 	border-radius: 10px;
 	height: 60px;
 	width: auto;
-}
-
-img {
-	border-radius: 10px;
-	width: 33%;
-	height: auto;
 }
 
 footer {
@@ -40,6 +34,121 @@ footer {
 	background-color: var(--blog-bg);
 	padding: 5px 2px;
 	margin: 7px;
+}
+
+/* modal images (get big when click) */
+.row > .column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column, img {
+	width: 45%;
+	height: auto;
+	float: left;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	height: auto;
+	max-width: 1200px;
+}
+
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slides {
+	display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+  
+img.demo {
+	opacity: 0.6;
+}
+  
+.active, .demo:hover {
+	opacity: 1;
+}
+  
+img.hover-shadow {
+	transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* hamburger menu */

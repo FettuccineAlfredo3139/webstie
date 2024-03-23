@@ -53,13 +53,81 @@
 
 					<div class="subcontainer">
 						<h3>Gallery</h3>
-						<img src="images/Righteous.png">
-						<img src="images/essfg.png">
-						<img src="images/FettuccinePFP2Day.png">
-						<img src="images/Eventide explorer.png">
-						<img src="images/Coconut talk.png">
-						<img src="images/Dragoon.png">
+						<div class="row">
+							<div class="column"><img src="images/Righteous.png" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+							<div class="column"><img src="images/essfg.png" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+							<div class="column"><img src="images/FettuccinePFP2Day.png" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+							<div class="column"><img src="images/Eventide explorer.png" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+							<div class="column"><img src="images/Coconut talk.png" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+							<div class="column"><img src="images/Dragoon.png" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
+						</div>
+						<div id="Modal" class="modal">
+							<span class="close" onclick="closeModal()">&times;</span>
+							<div class="modalContent">
+								<div class="slides">
+									<div class="numberTxt">1 / 6</div>
+									<img src="images/Righteous.png" style="width: 100%;">
+								</div>
+
+								<div class="slides">
+									<div class="numberTxt">2 / 6</div>
+									<img src="images/essfg.png" style="width: 100%;">
+								</div>
+
+								<div class="slides">
+									<div class="numberTxt">3 / 6</div>
+									<img src="images/FettuccinePFP2Day.png" style="width: 100%;">
+								</div>
+
+								<div class="slides">
+									<div class="numberTxt">4 / 6</div>
+									<img src="images/Eventide explorer.png" style="width: 100%;">
+								</div>
+
+								<div class="slides">
+									<div class="numberTxt">5 / 6</div>
+									<img src="images/Coconut talk.png" style="width: 100%;">
+								</div>
+
+								<div class="slides">
+									<div class="numberTxt">6 / 6</div>
+									<img src="images/Dragoon.png" style="width: 100%;">
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+
+								<div class="column">
+									<img class="demo" src="images/Righteous.png" onclick="currentSlide(1)">
+								</div>
+							  
+								<div class="column">
+									<img class="demo" src="images/essfg.png" onclick="currentSlide(2)">
+								</div>
+							  
+								<div class="column">
+									<img class="demo" src="images/FettuccinePFP2Day.png" onclick="currentSlide(3)">
+								</div>
+							  
+								<div class="column">
+									<img class="demo" src="images/Eventide explorer.png" onclick="currentSlide(4)">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="images/Coconut talk.png" onclick="currentSlide(5)">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="images/Dragoon.png" onclick="currentSlide(6)">
+								</div>
+							</div>
+						</div>
 					</div>
+					
 
 					<p><strong>Comments and guestbook!</strong> <br>
 					Feel free to sign the guestbook and leave a comment!</p>
